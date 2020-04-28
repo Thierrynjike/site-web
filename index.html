@@ -93,23 +93,52 @@
 			<div class="close">+</div>
 			<p>ENTREZ VOS DONNÉES S'IL VOUS PLAIT</p>
 			<form action="check.php" method="POST">
-				
-		<input type="text" placeholder="votre taille ici en cm" name="height" onchange="testfunc()" required>
-		<label>Sexe: </label>
-		 <select id="sexe" name="sex" width="35px">
-			<option value="Male">Male</option>
-			<option value="Female">Female</option>
-		</select> <br><br>
-				
+                <label>Sexe: </label>
+                <select id="sexe" name="sex" width="35px">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select> <br><br>
+
+                <input type="text" id="height" placeholder="votre taille ici en cm" name="height" onchange="poidsrange()" required>
+				<label id="tailleverif" style="display: none"><font color="red">Veuillez entrer une valeur entre 162 et 194 !</font></label>
 				<!--<input type="text" placeholder="votre poids ici en kg" name="weight" required>-->
-		<label>votre poids en kg : </label><br>
-		<center>
-		<select id="poids" name="sex" width="50px" style="display:none">
-			<option id="test"></option>
-			<option value="Female">25</option>
-			<option value="Female">25</option>
-			<option value="Female">25</option>
-		</select>
+                <label>votre poids en kg : </label><br>
+                <center>
+                <select id="poids" name="weight">
+                    <script>
+
+                        function setoption(a,b) {
+                            var str="";
+                            for(r=a;r<b+1;r++){
+                                str=str+"<option value='+r+'>"+r+"</option>";
+                            }
+                            document.getElementById('poids').innerHTML=str;
+                        }
+                        function poidsrange() {
+
+                            var Homme= [[162, 165, 49, 68],[166, 170, 50, 72],[171, 175, 54, 76],[175, 180, 57, 80],[181, 186, 61, 86],[186, 191, 65, 91],[189, 194, 67, 94]];
+
+                            var taille= document.getElementById('height').value;
+                            if(taille<162 || taille>194){
+                                document.getElementById('tailleverif').style.display="block";
+                            }
+                            else{
+
+                                document.getElementById('tailleverif').style.display="none";
+                                for(i=0;i<Homme.length;i++){
+                                    if(taille>=Homme[i][0] && taille<=Homme[i][1]){
+                                        setoption(Homme[i][2],Homme[i][3]);
+                                        break;
+                                    }
+
+                                }
+                            }
+
+                        }
+
+                    </script>
+
+                </select>
 		</center>
 		<br><br>
 				<input type="submit" id="submit" class="btn btn-primary " value="TRY NOW">
@@ -222,13 +251,7 @@
   <script src="assets/dropdown/js/navbar-dropdown.js"></script>
   <script src="assets/theme/js/script.js"></script>
   
-  <script>
-	function testfunc() {
-	document.getElementById('poids').style.display="block";
-	document.getElementById('test').innerHTML=12;
-	
-	}
-  </script>
+
   
 </body>
 </html>
