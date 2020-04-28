@@ -1,0 +1,212 @@
+#acc{
+	height:100%;
+	width:100%;
+	background:#fff;
+}
+#profileImage {
+ 
+  border-radius: 50%;
+  background: #512DA8;
+  
+   width: 50px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  margin: 20px 0;
+}
+#text{
+	background:#ffffff;
+	width:50%;
+	height:100%;
+	text-align:left;
+	text-align:10px;
+	float:left;
+
+}
+#profile{
+	width:20%;
+	height:100%;
+	text-align:justify;
+	margin-top:0px;
+	border-right:1px solid;
+	float:left;
+}
+#proimage{
+	width:200px;
+	height:200px;
+	border-radius:50%;
+	background: #512DA8;
+	margin-top:20px;
+	margin-left:10px;
+}
+#school{
+	height: 50px;
+	width:100px;
+	border:none;
+}
+#image{
+	height:100%;
+	width:50%;
+	background:#ffffff;
+	float:left;
+}
+
+#about{
+	display:inline-block;
+	height:100%;
+	width:100%;
+	background-color:#ffffff;
+}
+#bitch{
+	text-align:center;
+	position:center;
+}
+#thanospundu{
+	text-align:center;
+	position:center;
+	}
+#chef{
+text-align:center;
+position:center;
+}	
+#thierry{
+text-align:center;
+position:center;
+}	
+#pers{
+	border-color:black;
+	border-radius:50%;
+	height:150px;
+	width:150px;
+}
+#accueil{
+	margin-left:100px;
+	margin-right:100px;
+	border-style:outset;
+	height:100%;
+	border-radius:15px;
+	box-shadow: 5px 10px 8px 10px #888888;
+	background:#fff;
+}
+#info{
+	margin-left:15px;
+	margin-right:15px;
+	margin-top:20px;
+	height:auto;
+	box-shadow: 3px 8px 5px 8px #888888;
+	border-radius:5px;
+}
+#inf{
+	margin-left:8px;
+	color:#000;
+	text-align:justify;
+}
+#textpro{
+	text-align:center;
+	color:#fff;
+	font-size:100px;
+	
+}
+#usern{
+	margin-left:10px;
+	color:#000000;
+	font-size:20px;
+}
+#userni{
+	
+	color:#000000;
+	font-size:30px;
+	text-align:center;
+}
+#sett{
+	width:70%;
+	height:100%;
+	float:left;
+	margin-right:20px;
+	margin-left:50px;
+	margin-top:20px;
+}
+#settue{
+	width:40%;
+	height:100%;
+	float:left;
+	margin-left:50px;
+	margin-top:20px;
+}
+#ue{
+	width:30%;
+	height:100%;
+	float:left;
+	margin-right:20px;
+	margin-left:20px;
+	margin-top:20px;
+	border-left:1px solid;
+}
+#cours{
+	margin-left:30px;
+	font-size:15px;
+	color:#000;
+}	
+#annee{
+	font-size:30px;
+	font-style:bold;
+	text-align:center;
+	color:#33beff;
+}
+#bloc{
+	border-bottom:1px;
+	margin-left:20px;
+	margin-right:20px;
+	background:#fff;
+	text-align:center;
+}
+
+#ba1{
+	width:33%;
+	height:100%;
+	float:left;
+	margin-left:10px;
+	text-align:left;
+	margin-top:20px;
+	border-right:1px solid;
+}
+
+#ba2{
+	width:33%;
+	height:100%;
+	float:left;
+	margin-top:20px;
+	text-align:left;
+	border-right:1px solid;
+	
+}
+
+#ba3{
+	width:33%;
+	height:100%;
+	float:left;
+	margin-top:20px;
+	text-align:left;
+
+}
+
+#ma1{
+	width:49%;
+	height:100%;
+	float:left;
+	margin-left:10px;
+	text-align:left;
+	margin-top:20px;
+	border-right:1px solid;
+}
+
+#ma2{
+	width:49%;
+	height:100%;
+	float:left;
+	margin-top:20px;
+	text-align:left;	
+}
+	
+	

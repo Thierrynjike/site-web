@@ -1,0 +1,64 @@
+Homme V1
+162 :        49<p<65            XXS --> XS
+166 :        51<p<68            XS  --> S
+170 :        54<p<72            S   --> MS
+172 :        55<p<73            S   --> MS
+175 :        57<p<76            S   --> M
+178 :        59<p<79            MS  --> MT
+180 :        60<p<80            M   --> L
+181 :        61<p<81            M   --> L
+183 :        62<p<83            MT  --> L
+186 :        65<p<86            L   --> XL
+189 :        67<p<89            XL
+191 :        68<p<91            XL
+194 :        70<p<94            XXL
+
+Homme V2
+162 <t<166:        49<p<68            XXS --> S
+170 <t<175:        54<p<76            S   --> M
+175 <t<180:        57<p<80            S   --> L
+181 <t<186:        61<p<86            M   --> XL
+189 <t<191:        67<p<91            XL
+189 <t<194 :       70<p<94            XXL
+
+Homme V3
+162<t<165 :        49<p<68           XXS
+166<t<170 :        51<p<72           XS
+171<t<175 :        54<p<76           S
+175<t<180 :        57<p<80	     M
+181<t<186 :        61<p<86           L
+186<t<191 :        65<p<91           XL
+189<t<194 :        67<p<94           XXL
+   
+
+  Bien considérer la version V3
+  Au départ on affiche la taille entre 162 et 194, puis en fonction de valeur reçue on affiche les valeurs de l'intervalle de poids correspondant.
+  On coupe l'intervalle en deux et tous ceux qui sont en dessous de la moitié ont pour avatar le plus petit et de même pour le grand
+
+
+Femme V1
+155 :		45<p<60
+160 :		48<p<63
+163 :           49<p<65                      
+166 :           51<p<68
+168 :		53<p<70           
+170 :           54<p<72            
+171 :           55<p<73   
+173 :	       	56<p<74         
+175 :           57<p<76                 
+180 :           60<p<80           
+         
+
+Femme V3
+155<t<160 :        45<p<63           XXS
+160<t<166 :        48<p<68           XS
+163<t<168 :        49<p<70           S
+166<t<170 :        51<p<72           M
+168<t<173 :        53<p<74           L
+170<t<175 :        57<p<76           XL
+172<t<180 :        55<p<80           XXL
+
+   Faire pareil comme chez les hommes: 
+   WARNING: attention aux intervalles de tailles !!!
+
+
