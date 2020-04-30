@@ -115,7 +115,7 @@
             loader.load(
                 // resource URL
                 //'dressed_avatar.glb',
-                <?php echo("'".$_GET['sexe']."_".$_GET['taille']."_".$_GET['poids']."_".$_GET['id'].".glb'")?>,
+                <?php echo("'".$_GET['sexe']."_".$_GET['taille']."_".$_GET['poids']."_".$_COOKIE['id'].".glb'")?>,
                 // called when resource is loaded
                 function ( gltf ) {
 

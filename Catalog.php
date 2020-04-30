@@ -77,7 +77,7 @@
 <section id="features2-4" class="features2 cid-rVsFxqhuYc col-12">
 
     
-
+<p id="sexcatalog" style="margin-top: 15px"><h1><?php echo("Catalogue pour ".$_COOKIE['type']); ?></h1></p>
     
     
     <div class="col-12">
@@ -85,7 +85,7 @@
             <div class="card p-3 col-12 col-md-6 col-lg-3">
                 <div class="card-wrapper" id="clothes">
                     <div class="card-img" id="01" name="01">
-                        <img src="assets/images/01.PNG" alt="Mobirise" title="">
+                        <img src="<?php echo("assets/images/".$_GET['sex']."01.png"); ?>" alt="Mobirise" title="">
                     </div>
                     <div class="card-box">
                         <h4 class="card-title pb-3 mbr-fonts-style display-7">15.99 €</h4>

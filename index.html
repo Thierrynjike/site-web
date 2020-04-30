@@ -98,9 +98,8 @@
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                 </select> <br><br>
-
                 <input type="text" id="height" placeholder="votre taille ici en cm" name="height" onchange="poidsrange()" required>
-				<label id="tailleverif" style="display: none"><font color="red">Veuillez entrer une valeur entre 162 et 194 !</font></label>
+                <label id="tailleverif" style="color: red"> </label>
 				<!--<input type="text" placeholder="votre poids ici en kg" name="weight" required>-->
                 <label>votre poids en kg : </label><br>
                 <center>
@@ -117,17 +116,37 @@
                         function poidsrange() {
 
                             var Homme= [[162, 165, 49, 68],[166, 170, 50, 72],[171, 175, 54, 76],[175, 180, 57, 80],[181, 186, 61, 86],[186, 191, 65, 91],[189, 194, 67, 94]];
+                            var Femme= [[155, 160, 45, 63],[160, 163, 48, 68],[164, 168, 49, 70],[169, 170, 51, 72],[171, 173, 53, 74],[174, 175, 57, 76],[176, 180, 55, 80]];
 
                             var taille= document.getElementById('height').value;
-                            if(taille<162 || taille>194){
-                                document.getElementById('tailleverif').style.display="block";
+                            var tmp= document.getElementById('sexe');
+                            var temp = tmp.options[tmp.selectedIndex].text;
+
+
+                            if(temp == "Male") {
+                                var tab=Homme;
+                                document.cookie = "type=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+                                document.cookie = "type=Hommes";
+                            }
+                            else {
+                                var tab=Femme;
+                                document.cookie = "type=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+                                document.cookie = "type=Femmes";
+                            }
+
+                            mini=tab[0][0];
+                            maxi=tab[tab.length-1][1];
+
+
+                            if(taille<tab[0][0] || taille>tab[tab.length-1][1]){
+                                document.getElementById('tailleverif').innerHTML="Veuillez entrer une taille entre "+mini+" et "+maxi;
                             }
                             else{
 
                                 document.getElementById('tailleverif').style.display="none";
-                                for(i=0;i<Homme.length;i++){
-                                    if(taille>=Homme[i][0] && taille<=Homme[i][1]){
-                                        setoption(Homme[i][2],Homme[i][3]);
+                                for(i=0;i<tab.length;i++){
+                                    if(taille>=tab[i][0] && taille<=tab[i][1]){
+                                        setoption(tab[i][2],tab[i][3]);
                                         break;
                                     }
 
