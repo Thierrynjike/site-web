@@ -309,21 +309,39 @@ echo("<div id='avatar' class='col-6'>
   <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script type="text/javascript">
-        var dd = document.getElementsByClassName('card-img');
+    //  var dd = document.getElementsByClassName('card-img');
 
-		Array.prototype.forEach.call(dd, function(element) {
-		  element.addEventListener('click', function() {
-			var temp = this.id;
-			document.cookie = "id=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
-			document.cookie = "id="+temp;
-			location.reload();
-		  });
-		});
-		
+	//	Array.prototype.forEach.call(dd, function(element) {
+	//	  element.addEventListener('click', function() {
+	//		var temp = this.id;
+	//		document.cookie = "id=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+	//		document.cookie = "id="+temp;
+	//		location.reload();
+	//	  });
+	//	});
+	//
 	
 		
 
     </script>
+ <script type="text/javascript">
+     var dd = document.getElementsByClassName('card-img');
+
+     Array.prototype.forEach.call(dd, function(element) {
+         element.addEventListener('click', function() {
+             var temp = this.id;
+             document.cookie = "id=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+             document.cookie = "id="+temp;
+
+             var url = "<?php echo('vetement.php?poids='.$poid.'&taille='.$taile.'&sexe='.$sex.'&id=');?>"+temp;
+             window.location = url;
+         });
+     });
+
+
+
+
+ </script>
   <script src="script.js">
   
   

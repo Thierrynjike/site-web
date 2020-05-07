@@ -37,12 +37,22 @@ input {
 	cursor: pointer;
 }
 
-#clothes {
+#clothes1 {
 	cursor:pointer;
-	height:150px;
-	width:150px;
+	height:400px;
+	width:400px;
+}
+
+clothes {
+	cursor:pointer;
+	height:100px;
+	width:100px;
+}
+
+#article {
+	background-color: #ffffff;
 }
 
 #page{
-	background-color: #fffffff;
+	background-color: #ffffff;
 }
