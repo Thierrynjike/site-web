@@ -115,7 +115,10 @@
             loader.load(
                 // resource URL
                 //'dressed_avatar.glb',
-                <?php echo("'assets/avatar/".$_GET['sexe']."_".$_GET['taille']."_".$_GET['poids']."_".$_COOKIE['id'].".glb'")?>,
+                <?php
+                $avatar="'assets/avatar/".$_GET['sexe']."_".$_GET['taille']."_".$_GET['poids']."".$_COOKIE['idvet']."".$_COOKIE['sizeh']."".$_COOKIE['sizeb'].".glb'";
+                    echo($avatar);
+                ?>,
                 // called when resource is loaded
                 function ( gltf ) {
 
@@ -140,6 +143,7 @@
                     },
                         // called when loading has errors
                         function ( error ) {
+                            alert("Désolé, Taille indisponible ! Veuillez en choisir une autre s'il vous plait");
 
                             console.log( 'An error happened' );
 

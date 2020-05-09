@@ -57,7 +57,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="about.php"><span class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>Contact Us</a>
+                    <a class="nav-link link text-white display-4" href="contact.html"><span class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>Contact Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="about.php">
@@ -65,7 +65,7 @@
                         About Us
                     </a>
                 </li></ul>
-            <div class="navbar-buttons mbr-section-btn" id="button"><a class="btn btn-sm btn-white-outline display-4" href="">Try it Now!</a></div>
+            <div class="navbar-buttons mbr-section-btn" id="button"><a class="btn btn-sm btn-white-outline display-4" href="index.html">Try it Now!</a></div>
         </div>
     </nav>
 </section>

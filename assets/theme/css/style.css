@@ -311,7 +311,7 @@ figure[mbr-media-size] {
   flex-shrink: 0;
   -webkit-flex-shrink: 0;
   cursor: pointer;
-  height: 200px;
+  height: 400px;
   width: 200px;
   padding: 25px;
 }

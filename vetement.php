@@ -85,7 +85,7 @@
                         <div class="card p-3 col-12 col-md-6 col-lg-6 ">
                             <div class="card-wrapper col-12" id="clothes1">
                                 <div class="card-img" id="_01" name="01">
-                                    <img src="<?php echo("assets/images/".$_GET['sexe']."01.png"); ?>" alt="Mobirise" title="">
+                                    <img src="<?php echo("assets/images/".$_COOKIE['id'].".png"); ?>" alt="Mobirise" title="">
                                     <br><br><h4 class="card-title pb-3 mbr-fonts-style display-7">15.99 €</h4>
                                 </div>
 
@@ -99,24 +99,126 @@
                             <p>Choisissez une taille de vêtement</p>
                             <?php
 
-                            if($_GET['sexe']=='F') {
 
-                                echo('<select style = "width:100px" >
-                                <option > S</option >
-                                <option > M</option >
-                                <option > L</option >
-                            </select >');
+                                if(strlen($_COOKIE['id'])>4) {
 
-                            }
-                            if($_GET['sexe']=='H'){
-                                echo('<select style = "width:100px" >
-                                <option > M</option >
-                                <option > L</option >
-                                <option > XL</option >
-                            </select >');
+                                    echo('<p>Taille du t-shirt</p>
+                                        <select id="mySelect1" style = "width:100px">
+                                        <option id="_S" class="taille1" value="0"> S</option >
+                                        <option id="_M" class="taille1" value="1"> M</option >
+                                        <option id="_L" class="taille1" value="2"> L</option >
+                                        <option id="_XL" class="taille1" value="3"> XL</option >
+                                    </select >');
+                                    echo('<br><br><p class="pant">Taille du Pantalon</p>
+                                        <select id="mySelect2" class="pant" style = "width:100px">                                                                                       
+                                        <option id="_S" class="taille2" value="0"> S</option >
+                                        <option id="_M" class="taille2" value="1"> M</option >
+                                        <option id="_L" class="taille2" value="2"> L</option >
+                                        <option id="_XL" class="taille2" value="3"> XL</option >
+                                    </select >
+                                   <br><br><button style="background-color: black; color: white; width: 100px; height: 40px;cursor: pointer" id="button" onclick="valider()">Valider</button>');
+                                }
+                                else{
+                                    echo('<select id="mySelect" style = "width:100px">
+                                        <option id="_S" class="taille" value="0"> S</option >
+                                        <option id="_M" class="taille" value="1"> M</option >
+                                        <option id="_L" class="taille" value="2"> L</option >
+                                        <option id="_XL" class="taille" value="3"> XL</option >
+                                    </select >');
+                                }
 
-                            }
                             ?>
+
+
+
+
+
+                            <script type="text/javascript">
+                                var dd = document.getElementsByClassName('taille');
+                                document.getElementById("mySelect").selectedIndex = "<?php echo($_COOKIE['sel']);?>";
+
+                                Array.prototype.forEach.call(dd, function(element) {
+                                    element.addEventListener('click', function() {
+                                        var siz= this.id;
+
+                                        if("<?php echo($_COOKIE['id']);?>"=="_01"){
+                                            document.cookie = "idvet=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+                                            document.cookie = "idvet=_01";
+                                            document.cookie = "sizeh=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+                                            document.cookie = "sizeh="+siz;
+                                            document.cookie = "sizeb=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+                                            document.cookie = "sizeb=";
+                                        }
+                                        else {
+                                            if("<?php echo($_COOKIE['id']);?>"=="_02") {
+                                                document.cookie = "idvet=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+                                                document.cookie = "idvet=_02";
+                                                document.cookie = "sizeh=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+                                                document.cookie = "sizeh=";
+                                                document.cookie = "sizeb=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+                                                document.cookie = "sizeb=" + siz;
+                                            }
+                                        }
+                                        document.cookie = "sel=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+                                        document.cookie = "sel="+this.value;
+
+
+                                        location.reload();
+                                    });
+                                });
+
+
+
+
+                            </script>
+
+                            <script type="text/javascript">
+
+                                var ddh = document.getElementsByClassName('taille1');
+                                var ddb = document.getElementsByClassName('taille2');
+                                document.getElementById("mySelect1").selectedIndex = "<?php echo($_COOKIE['selh']);?>";
+                                document.getElementById("mySelect2").selectedIndex = "<?php echo($_COOKIE['selb']);?>";
+
+                                Array.prototype.forEach.call(ddh, function(element) {
+                                    element.addEventListener('click', function() {
+
+                                        document.cookie = "selh=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+                                        document.cookie = "selh="+this.value;
+                                        document.cookie = "sizeh=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+                                        document.cookie = "sizeh="+this.id;
+
+                                    });
+                                });
+
+                                Array.prototype.forEach.call(ddb, function(element) {
+                                    element.addEventListener('click', function() {
+
+                                        document.cookie = "selb=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+                                        document.cookie = "selb="+this.value;
+                                        document.cookie = "sizeb=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+                                        document.cookie = "sizeb="+this.id;
+
+                                    });
+                                });
+
+
+                                function valider() {
+
+                                    document.cookie = "idvet=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+                                    document.cookie = "idvet=_01_02";
+                                    document.getElementById("mySelect1").selectedIndex = "<?php echo($_COOKIE['selh']);?>";
+                                    document.getElementById("mySelect2").selectedIndex = "<?php echo($_COOKIE['selb']);?>";
+
+                                    location.reload();
+                                }
+
+
+                            </script>
+
+
+
+
+
 
                         </div>
                     </div>
@@ -134,7 +236,9 @@
         $taile= $_GET['taille'];
         $sex  = $_GET['sexe'];
         $iden = $_COOKIE["id"];
-        $chemin = "index1.php?poids=".$poid."&taille=".$taile."&sexe=".$sex."&id=".$iden;
+        $sizeh= $_COOKIE['sizeh'];
+        $sizeb= $_COOKIE['sizeb'];
+        $chemin = "index1.php?poids=".$poid."&taille=".$taile."&sexe=".$sex."&id=".$iden."&sizeh=".$sizeh."&sizeb=".$sizeb;
 
         echo("<iframe class='col-12' src=".$chemin." height='100%' width='100%'>
     </iframe>
@@ -241,7 +345,10 @@
   <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script src="script.js">
+
+
   
   
 
-</body></html>
+</body>
+      </html>

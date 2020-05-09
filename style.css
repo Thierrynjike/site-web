@@ -43,10 +43,10 @@ input {
 	width:400px;
 }
 
-clothes {
+.clothes {
 	cursor:pointer;
-	height:100px;
-	width:100px;
+	height:100%;
+	width:100%;
 }
 
 #article {
@@ -55,4 +55,10 @@ clothes {
 
 #page{
 	background-color: #ffffff;
+}
+
+.col-spaced {
+
+	margin-left: 20px;
+	margin-right: 20px;
 }

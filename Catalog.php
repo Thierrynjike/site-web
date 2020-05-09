@@ -70,149 +70,71 @@
 </section>
 
 <section class="engine"><a href="https://mobirise.info/p">web templates free download</a></section>
-<br><br><br><br>
-<div id="page" class="col-12 row">
-<div id="article" class="col-6">
+
+<div id="page" class="col-12">
 
 <section id="features2-4" class="features2 cid-rVsFxqhuYc col-12">
 
     
 <p id="sexcatalog" style="margin-top: 15px"><h1><?php echo("Catalogue pour ".$_COOKIE['type']); ?></h1></p>
     
-    
-    <div class="col-12">
+
         <div class="media-container-row col-12">
-            <div class="card p-3 col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper" id="clothes">
-                    <div class="card-img" id="01" name="01">
-                        <img src="<?php echo("assets/images/".$_GET['sex']."01.png"); ?>" alt="Mobirise" title="">
+            <div class="card col-3 col-md-3 col-lg-3">
+                <div class="col-spaced">
+                    <div class="card-img" id="_01" name="01">
+                        <img class="clothes" src="<?php echo("assets/images/_01.png"); ?>" alt="Mobirise" title="">
                     </div>
                     <div class="card-box">
-                        <h4 class="card-title pb-3 mbr-fonts-style display-7">15.99 €</h4>
+                        <h4 class="card-title pb-3 mbr-fonts-style display-7" style="text-indent:22px;" name="T-Shirt Blanc 5.99 €">T-Shirt Blanc </h4>
+                        <p style="text-indent: 22px;"><font color="blue">5.99 €</font></p>
                         
                     </div>
                 </div>
             </div>
 
-            <div class="card p-3 col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper" id="clothes">
-                    <div class="card-img">
-                        <img src="assets/images/robe2.jpeg" alt="Mobirise" title="">
+            <div class="card col-3 col-md-3 col-lg-3">
+                <div class="col-spaced">
+                    <div class="card-img" id="_02" name="02">
+                        <img class="clothes" src="<?php echo("assets/images/_02.png"); ?>" alt="Mobirise" title="">
                     </div>
                     <div class="card-box ">
-                        <h4 class="card-title pb-3 mbr-fonts-style display-7">13.99 €</h4>
+                        <h4 class="card-title pb-3 mbr-fonts-style display-7" style="text-indent:22px;" name="Pantalon Bleu 9.99 €">Pantalon Bleu</h4>
+                        <p style="text-indent: 22px;"><font color="blue">9.99 €</font></p>
                         
                     </div>
                 </div>
             </div>
 
-            <div class="card p-3 col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper" id="clothes">
-                    <div class="card-img">
-                        <img src="assets/images/robe1.jpeg" alt="Mobirise" title="">
+            <div class="card col-3 col-md-3 col-lg-3">
+                <div class="col-spaced">
+                    <div class="card-img" id="_01_02" name="_01_02">
+                        <img class="clothes" src="<?php echo("assets/images/_01_02.png"); ?>" alt="Mobirise" title="">
                     </div>
                     <div class="card-box">
-                        <h4 class="card-title pb-3 mbr-fonts-style display-7">54.99€</h4>
+                        <h4 class="card-title pb-3 mbr-fonts-style display-7" style="text-indent:22px;" name="Ensemble T-shirt & Pantalon 14.99 €">Ensemble T-Shirt & Pantalon </h4>
+                        <p style="text-indent: 22px;"><font color="blue">14.99 €</font></p>
                         
                     </div>
                 </div>
             </div>
 
-            <div class="card p-3 col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper" id="clothes">
-                    <div class="card-img">
-                        <img src="assets/images/tryit.jpg" alt="Mobirise" title="">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title pb-3 mbr-fonts-style display-7">35.49 €</h4>
-                        
-                    </div>
-                </div>
-            </div>
+
         </div>
-    </div>
+
 </section>
 
-<section id="features2-4" class="features2 cid-rVsFxqhuYc col-12">
 
-    
-
-    
-    
-    <div class="col-12">
-        <div class="media-container-row">
-            <div class="card p-3 col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper" id="clothes">
-                    <div class="card-img">
-                        <img src="assets/images/pant1.jpeg" alt="Mobirise" title="">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title pb-3 mbr-fonts-style display-7">15.99 €</h4>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <img src="assets/images/pant2.jpeg" alt="Mobirise" title="">
-                    </div>
-                    <div class="card-box ">
-                        <h4 class="card-title pb-3 mbr-fonts-style display-7">
-                            14.99 €
-                        </h4>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper" id="clothes">
-                    <div class="card-img">
-                        <img src="assets/images/pant3.jpeg" alt="Mobirise" title="">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title pb-3 mbr-fonts-style display-7">
-                           19.99 €
-                        </h4>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-6 col-lg-3">
-                <div class="card-wrapper" id="clothes">
-                    <div class="card-img">
-                        <img src="assets/images/pant1.jpeg" alt="Mobirise" title="">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title pb-3 mbr-fonts-style display-7">
-                            10.99 €
-                        </h4>
-                        
-                </div>
-            </div>
-        </div>
-    </div>
-	</div>
-</section>
-</div>
 <?php
     
  $poid = $_GET['poids'];
  $taile= $_GET['taille'];
  $sex  = $_GET['sex'];
  $iden = $_COOKIE["id"];
+ $sizeh  = "";
+ $sizeb  = "";
  $chemin = "index1.php?poids=".$poid."&taille=".$taile."&sexe=".$sex."&id=".$iden;
-    
-echo("<div id='avatar' class='col-6'>
-	 
-    
- 
-    <iframe class='col-12' src=".$chemin." height='100%' width='100%'>
-    </iframe>
-   </div>")
+
        ?>
 </div>
          
@@ -332,8 +254,20 @@ echo("<div id='avatar' class='col-6'>
              var temp = this.id;
              document.cookie = "id=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
              document.cookie = "id="+temp;
+             document.cookie =  "idvet=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+             document.cookie = "idvet=";
+             document.cookie = "sizeh=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+             document.cookie = "sizeh=";
+             document.cookie = "sizeb=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+             document.cookie = "sizeb=";
+             document.cookie = "sel=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+             document.cookie = "sel=0";
+             document.cookie = "selh=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+             document.cookie = "selh=0";
+             document.cookie = "selb=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+             document.cookie = "selb=0";
 
-             var url = "<?php echo('vetement.php?poids='.$poid.'&taille='.$taile.'&sexe='.$sex.'&id=');?>"+temp;
+             var url = "<?php echo('vetement.php?poids='.$poid.'&taille='.$taile.'&sexe='.$sex);?>";
              window.location = url;
          });
      });
