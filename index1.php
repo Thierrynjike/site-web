@@ -40,7 +40,7 @@
             renderer.shadowMap.enabled = true;
             container.appendChild(renderer.domElement);
 
-            // update the viewport
+            // aspect ecran
             window.addEventListener('resize',function(){
                 var width= window.innerWidth;
                 var height= window.innerHeight;
@@ -54,13 +54,13 @@
             scene.background = new THREE.Color( 0xa0a0a0 );
             //scene.fog = new THREE.Fog( 0xa0a0a0, 2.5, 5);
 
-            // light 1
+            // lumiere 1
 
             var light = new THREE.HemisphereLight( 0xffffff, 0x444444 );
             light.position.set( 0, 20, 0 );
             scene.add( light );
 
-            // light 2
+            // lumiere 2
 
             light = new THREE.DirectionalLight( 0xffffff );
             light.position.set( 0, 2, 1 );
@@ -73,7 +73,7 @@
 
 
 
-            // ground
+            // sol
 
             var mesh = new THREE.Mesh( new THREE.PlaneBufferGeometry( 2000, 2000 ), new THREE.MeshPhongMaterial( { color:'#f5f5f5', depthWrite: false } ) );
 
@@ -83,27 +83,24 @@
             scene.add( mesh );
 
 
-            // grid
+            // grille
             var grid = new THREE.GridHelper( 200, 200, 0x000000, 0x000000 );
             grid.material.opacity = 0.2;
             grid.material.transparent = true;
             //scene.add( grid );
 
 
-            // control
+            // control pour zoomer et se deplacer dans la scene
 
             var controls= new THREE.OrbitControls(camera,renderer.domElement);
             controls.target.set( 0, 1, 0 );
             controls.update();
 
 
-            // loaders
+            // chargement objets 3D
 
 
             var loader = new THREE.GLTFLoader();
-
-
-            // Optional: Provide a DRACOLoader instance to decode compressed mesh data for fbx loading
             var dracoLoader = new THREE.DRACOLoader();
             dracoLoader.setDecoderPath( 'draco' );
             loader.setDRACOLoader( dracoLoader );
@@ -113,35 +110,35 @@
 
             // load a resource
             loader.load(
-                // resource URL
-                //'dressed_avatar.glb',
+                // ressource URL
+                //'localisation_avatar.glb',
                 <?php
                 $avatar="'assets/avatar/".$_GET['sexe']."_".$_GET['taille']."_".$_GET['poids']."".$_COOKIE['idvet']."".$_COOKIE['sizeh']."".$_COOKIE['sizeb'].".glb'";
                     echo($avatar);
                 ?>,
-                // called when resource is loaded
+                // appelé quand la fonction le chargement est réussi
                 function ( gltf ) {
 
                     //scene.add( gltf );
                     scene.add( gltf.scene );
 
-                    gltf.animations; // Array<THREE.AnimationClip>
-                    gltf.scene; // THREE.Group
-                    gltf.scenes; // Array<THREE.Group>
-                    gltf.cameras; // Array<THREE.Camera>
-                    gltf.asset; // Object
+                    gltf.animations;
+                    gltf.scene;
+                    gltf.scenes;
+                    gltf.cameras;
+                    gltf.asset;
 
 
 
                 },
-                    // called when loading is in progresses
+                    // appelé lors du chargement du modèle
                     function ( xhr ) {
 
                         console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
 
 
                     },
-                        // called when loading has errors
+                        // appelé quand il y a erreur dans le chargement
                         function ( error ) {
                             alert("Désolé, Taille indisponible ! Veuillez en choisir une autre s'il vous plait");
 
@@ -152,12 +149,12 @@
 
 
 
-            // draw scene
+            // scene
             var render= function()
             {
                 renderer.render(scene, camera);   
             };
-            // run game loop (update, render, repeat)
+
             var GameLoop= function()
             {
                 requestAnimationFrame(GameLoop);

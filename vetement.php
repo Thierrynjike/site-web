@@ -83,6 +83,7 @@
 
                     <div class="row">
                         <div class="card p-3 col-12 col-md-6 col-lg-6 ">
+                            <!-- carte vetement selectioné page précédente -->
                             <div class="card-wrapper col-12" id="clothes1">
                                 <div class="card-img" id="_01" name="01">
                                     <img src="<?php echo("assets/images/".$_COOKIE['id'].".png"); ?>" alt="Mobirise" title="">
@@ -101,6 +102,9 @@
 
 
                                 if(strlen($_COOKIE['id'])>4) {
+                                    /* cette condition est remplie si on a une combinaison (vetement haut et bas)
+                                    si c'est le cas on affiche 2 menus deroulant
+                                    */
 
                                     echo('<p>Taille du t-shirt</p>
                                         <select id="mySelect1" style = "width:100px">
@@ -173,6 +177,7 @@
                             </script>
 
                             <script type="text/javascript">
+                                // Ce code javascript est pour recuperer les tailles choisies et recharger la page avec le bon avatar
 
                                 var ddh = document.getElementsByClassName('taille1');
                                 var ddb = document.getElementsByClassName('taille2');

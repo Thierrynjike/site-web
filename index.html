@@ -29,7 +29,7 @@
 <body>
   <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
 
-    
+      <!-- La barre de Navigation -->
 
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,7 +68,7 @@
 
 <section class="engine"><a href="https://mobirise.info/t">free amp templates</a></section><section class="cid-qTkA127IK8 mbr-fullscreen mbr-parallax-background" id="header2-1">
 
-    
+      <!-- Le Corps de la Page -->
 
 
     <div class="container align-center">
@@ -85,7 +85,7 @@
     </div>
 	
 	
-	<!-- Modal section -->
+	<!-- Petit formulaire : Sexe - Taille - Poids -->
 
 	<div class="bg-modal">
 		<div class="modal-content">
@@ -93,6 +93,10 @@
 			<div class="close">+</div>
 			<p>ENTREZ VOS DONNÉES S'IL VOUS PLAIT</p>
 			<form action="check.php" method="POST">
+
+                <!-- On fait appel à la page 'check.php' quand on fini de remplir le formulaire pour recuperer
+                les valeurs de sexe, taille et poids à travers des variables php -->
+
                 <label>Sexe: </label>
                 <select id="sexe" name="sex" width="35px">
                     <option value="Male">Male</option>
@@ -100,13 +104,15 @@
                 </select> <br><br>
                 <input type="text" id="height" placeholder="votre taille ici en cm" name="height" onchange="poidsrange()" required>
                 <label id="tailleverif" style="color: red"> </label>
-				<!--<input type="text" placeholder="votre poids ici en kg" name="weight" required>-->
                 <label>votre poids en kg : </label><br>
                 <center>
                 <select id="poids" name="weight">
                     <script>
 
                         function setoption(a,b) {
+                            /* la fonction setoption permet de generer le menu deroulant du poids en fonction
+                            des bornes de tailles passées en parametres
+                             */
                             var str="";
                             for(r=a;r<b+1;r++){
                                 str=str+"<option value='+r+'>"+r+"</option>";
@@ -114,7 +120,14 @@
                             document.getElementById('poids').innerHTML=str;
                         }
                         function poidsrange() {
-
+                            /*
+                            Cette fonction permet de:
+                            - Recuperer le poids et la taille  choisis par l'utilisateur
+                            - Attribuer à l'utilisateur l'avatar la taille et le poids qui sont les plus proches de ses choix
+                            des valeurs qu'il a introduit
+                            - Enregistrer les valeurs de sexe dans les cookies
+                            - verifier que les valeurs introduites sont bin comprises dans l'intervalle de travail
+                            */
                             var Homme= [[162, 165, 49, 68],[166, 170, 50, 72],[171, 175, 54, 76],[175, 180, 57, 80],[181, 186, 61, 86],[186, 191, 65, 91],[189, 194, 67, 94]];
                             var Femme= [[155, 160, 45, 63],[160, 163, 48, 68],[164, 168, 49, 70],[169, 170, 51, 72],[171, 173, 53, 74],[174, 175, 57, 76],[176, 180, 55, 80]];
 
@@ -176,10 +189,7 @@
 
 
 <section class="cid-qTkAaeaxX5 mbr-reveal" id="footer1-2">
-
-    
-
-    
+    <!-- Footer -->
 
     <div class="container">
         <div class="media-container-row content text-white">
@@ -257,6 +267,8 @@
         </div>
     </div>
 </section>
+
+  <!-- Pages JavaScripts -->
 
   <script src="script.js"></script>
   <script src="assets/web/assets/jquery/jquery.min.js"></script>

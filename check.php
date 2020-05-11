@@ -5,7 +5,7 @@ session_start();
     $sexe =$_POST['sex'];
 	$vetSize="";
 	
-	//Catalog hommes
+	//Tableaux Catalogue pour hommes: Tab_sexe_Taille_taille_vetement = [Taille_min, Taille_max, poids_min, poids_max, taille_vetement]
 	
 	$tabHXXS= array(0 => 162, 1 => 165, 2 => 49, 3 => 68, 4 => 'XXS');
 	$tabHXS= array(0 => 166, 1 => 170, 2 => 50, 3 => 72, 4 => 'XS');
@@ -16,7 +16,7 @@ session_start();
 	$tabHXXL= array(0 => 189, 1 => 194, 2 => 67, 3 => 94, 4 => 'XXL');
 	
 	
-	//Catalog femmes
+	//Tableaux Catalogue pour femmes: Tab_sexe_Taille_taille_vetement = [Taille_min, Taille_max, poids_min, poids_max, taille_vetement]
 	
 	
 	$tabFXXS= array(0 => 155, 1 => 160, 2 => 45, 3 => 63, 4 => 'XXS');
@@ -26,21 +26,12 @@ session_start();
 	$tabFL= array(0 => 171, 1 => 173, 2 => 53, 3 => 74, 4 => 'L');
 	$tabFXL= array(0 => 174, 1 => 175, 2 => 57, 3 => 76, 4 => 'XL');
 	$tabFXXL= array(0 => 176, 1 => 180, 2 => 55, 3 => 80, 4 => 'XXL');
-	
-	
-// taille          	poids 
-	
-//155<t<160 :        45<p<63           XXS
-//160<t<163 :        48<p<68           XS
-//164<t<168 :        49<p<70           S
-//169<t<170 :        51<p<72           M
-//171<t<173 :        53<p<74           L
-//174<t<175 :        57<p<76           XL
-//176<t<180 :        55<p<80           XXL
 
-	
-	
-	
+	/* le code qui suit permet d'attribuer à l'utilisateur une taille et un poids dans notre catalogue,
+	car nous n'avons pas consideré tous les centimetres et les kilogrammes.
+	*/
+
+
 	// Pour les hommes
 	
     if($sexe=="Male"){
@@ -51,16 +42,26 @@ session_start();
 		if (($taille >= $tabHXXS[0]) and ($taille <= $tabHXXS[1])) {
 			$vetSize=$tabHXXS[4];
 			if (abs($taille - $tabHXXS[0]) < abs($taille - $tabHXXS[1])) {
+
+			// si la valeur entrée est plus proche de la Taille_min que de la Taille_max, on attribue la Taille_min du tablau
+
 				$taille = $tabHXXS[0];
 			}
 			else {
+			//si la valeur entrée est plus proche de la Taille_max que de la Taille_min, on attribue la Taille_min du tablau
+
 				$taille = $tabHXXS[1];
 			}
 			
 			if (abs($poids - $tabHXXS[2]) < abs($poids - $tabHXXS[3])) {
+
+			// si la valeur entrée est plus proche du poids_min que du poids_max, on attribue le poids_min du tablau
+
 				$poids = $tabHXXS[2];
 			}
 			else {
+			// si la valeur entrée est plus proche du poids_max que du poids_min, on attribue le poids_max du tablau
+
 				$poids = $tabHXXS[3];
 			}
 		}
@@ -318,46 +319,9 @@ session_start();
 
 		
     }
+
 	
-	
-	
-	
-    
-    // taille          	poids 
-
-// 162<t<165 :        49<p<68           XXS
-// 166<t<170 :        50<p<72           XS
-// 171<t<175 :        54<p<76           S
-// 175<t<180 :        57<p<80	   	     M
-// 181<t<186 :        61<p<86           L
-// 186<t<191 :        65<p<91           XL
-// 189<t<194 :        67<p<94           XXL
-
-// si le user entre 160 comme taiile et 75 comme poids
-
-// 150 et 80
-
-// Tailles de vêtements:   s, M, L, XL
-
-// tab1S = [100, 120, p1, p2]
-// tab2M = [120, 140]
-// tab3L = [140, 160]
-// tab4XL = [160, 180]
-
-// si taille >=tab1s[0] and taille<tab1s[1]
-	// taillevet='s'
-	// (abs(taille-tab1s[0])<abs(taille-tab1s[1])) ? taille=tab1s[0] : taille = tab1s[1] ;
-// sinon si on teste pour M
-	
-// sinon si on teste pour L
-
-// sinon on teste XL
-
-    
-	
-	
-	
-
+// passage des valeurs taille - poids - sexe à travers l'url via des variables php
 header('Location:Catalog.php?taille='.$taille.'&poids='.$poids.'&sex='.$sexe);
 ?>
 

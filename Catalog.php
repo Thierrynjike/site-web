@@ -77,7 +77,8 @@
 
     
 <p id="sexcatalog" style="margin-top: 15px"><h1><?php echo("Catalogue pour ".$_COOKIE['type']); ?></h1></p>
-    
+
+    <!-- Les cartes avec les vetements -->
 
         <div class="media-container-row col-12">
             <div class="card col-3 col-md-3 col-lg-3">
@@ -124,7 +125,7 @@
 
 </section>
 
-
+    <!-- Ici on recupere les valeurs des parametres php passées via l'Url -->
 <?php
     
  $poid = $_GET['poids'];
@@ -231,43 +232,38 @@
   <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script type="text/javascript">
-    //  var dd = document.getElementsByClassName('card-img');
-
-	//	Array.prototype.forEach.call(dd, function(element) {
-	//	  element.addEventListener('click', function() {
-	//		var temp = this.id;
-	//		document.cookie = "id=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
-	//		document.cookie = "id="+temp;
-	//		location.reload();
-	//	  });
-	//	});
-	//
+  
 	
 		
 
     </script>
  <script type="text/javascript">
+     /*
+     Ce Code Javascript permet le chargement des cookies  en fonction du choix de vetement effectué par l'utilisateur et
+     de charger la page avec vetement avec le vetement choisi et l'avatar
+     */
      var dd = document.getElementsByClassName('card-img');
 
      Array.prototype.forEach.call(dd, function(element) {
          element.addEventListener('click', function() {
              var temp = this.id;
-             document.cookie = "id=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+             document.cookie = "id=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/"; // cookie identification vetement
              document.cookie = "id="+temp;
-             document.cookie =  "idvet=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+             document.cookie =  "idvet=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";// cookie identification vetement
              document.cookie = "idvet=";
-             document.cookie = "sizeh=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+             document.cookie = "sizeh=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";// cookie taille du vetement haut
              document.cookie = "sizeh=";
-             document.cookie = "sizeb=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+             document.cookie = "sizeb=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";// cookie taille vetement bas
              document.cookie = "sizeb=";
-             document.cookie = "sel=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+             document.cookie = "sel=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/"; // cookie element selectionné menu deroulant
              document.cookie = "sel=0";
-             document.cookie = "selh=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+             document.cookie = "selh=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";// cookie element selectionné menu deroulant haut
              document.cookie = "selh=0";
-             document.cookie = "selb=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+             document.cookie = "selb=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";// cookie element selectionné menu deroulant bas
              document.cookie = "selb=0";
 
              var url = "<?php echo('vetement.php?poids='.$poid.'&taille='.$taile.'&sexe='.$sex);?>";
+             // on charge la page vetement avec des nouvelles valeurs en cookies
              window.location = url;
          });
      });
