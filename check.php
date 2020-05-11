@@ -187,14 +187,14 @@ session_start();
 		
 		if (($taille >= $tabFXXS[0]) and ($taille <= $tabFXXS[1])) {
 			$vetSize=$tabFXXS[4];
-			if (abs($taille - $tabFXXS[0]) < abs($taille - $tabFXXS[1])) {
+			if (abs($taille - $tabFXXS[0]) <= abs($taille - $tabFXXS[1])) {
 				$taille = $tabFXXS[0];
 			}
 			else {
 				$taille = $tabFXXS[1];
 			}
 			
-			if (abs($poids - $tabFXXS[2]) < abs($poids - $tabFXXS[3])) {
+			if (abs($poids - $tabFXXS[2]) <= abs($poids - $tabFXXS[3])) {
 				$poids = $tabFXXS[2];
 			}
 			else {
@@ -206,14 +206,14 @@ session_start();
 		
 		if (($taille >= $tabFXS[0]) and ($taille <= $tabFXS[1])) {
 			$vetSize=$tabFXS[4];
-			if (abs($taille - $tabFXS[0]) < abs($taille - $tabFXS[1])) {
+			if (abs($taille - $tabFXS[0]) <= abs($taille - $tabFXS[1])) {
 				$taille = $tabFXS[0];
 			}
 			else {
 				$taille = $tabFXS[1];
 			}
 			
-			if (abs($poids - $tabFXS[2]) < abs($poids - $tabFXS[3])) {
+			if (abs($poids - $tabFXS[2]) <= abs($poids - $tabFXS[3])) {
 				$poids = $tabFXS[2];
 			}
 			else {
@@ -225,14 +225,14 @@ session_start();
 		
 		if (($taille >= $tabFS[0]) and ($taille <= $tabFS[1])) {
 			$vetSize=$tabFS[4];
-			if (abs($taille - $tabFS[0]) < abs($taille - $tabFS[1])) {
+			if (abs($taille - $tabFS[0]) <= abs($taille - $tabFS[1])) {
 				$taille = $tabFS[0];
 			}
 			else {
 				$taille = $tabFS[1];
 			}
 			
-			if (abs($poids - $tabFS[2]) < abs($poids - $tabFS[3])) {
+			if (abs($poids - $tabFS[2]) <= abs($poids - $tabFS[3])) {
 				$poids = $tabFS[2];
 			}
 			else {
@@ -244,14 +244,14 @@ session_start();
 		
 		if (($taille >= $tabFM[0]) and ($taille <= $tabFM[1])) {
 			$vetSize=$tabFM[4];
-			if (abs($taille - $tabFM[0]) < abs($taille - $tabFM[1])) {
+			if (abs($taille - $tabFM[0]) <= abs($taille - $tabFM[1])) {
 				$taille = $tabFM[0];
 			}
 			else {
 				$taille = $tabFM[1];
 			}
 			
-			if (abs($poids - $tabFM[2]) < abs($poids - $tabFM[3])) {
+			if (abs($poids - $tabFM[2]) <= abs($poids - $tabFM[3])) {
 				$poids = $tabFM[2];
 			}
 			else {
@@ -263,14 +263,14 @@ session_start();
 		
 		if (($taille >= $tabFL[0]) and ($taille <= $tabFL[1])) {
 			$vetSize=$tabFL[4];
-			if (abs($taille - $tabFL[0]) < abs($taille - $tabFL[1])) {
+			if (abs($taille - $tabFL[0]) <= abs($taille - $tabFL[1])) {
 				$taille = $tabFL[0];
 			}
 			else {
 				$taille = $tabFL[1];
 			}
 			
-			if (abs($poids - $tabFL[2]) < abs($poids - $tabFL[3])) {
+			if (abs($poids - $tabFL[2]) <= abs($poids - $tabFL[3])) {
 				$poids = $tabFL[2];
 			}
 			else {
@@ -282,14 +282,14 @@ session_start();
 		
 		if (($taille >= $tabFXL[0]) and ($taille <= $tabFXL[1])) {
 			$vetSize=$tabFXL[4];
-			if (abs($taille - $tabFXL[0]) < abs($taille - $tabFXL[1])) {
+			if (abs($taille - $tabFXL[0]) <= abs($taille - $tabFXL[1])) {
 				$taille = $tabFXL[0];
 			}
 			else {
 				$taille = $tabFXL[1];
 			}
 			
-			if (abs($poids - $tabFXL[2]) < abs($poids - $tabFXL[3])) {
+			if (abs($poids - $tabFXL[2]) <= abs($poids - $tabFXL[3])) {
 				$poids = $tabFXL[2];
 			}
 			else {
@@ -301,14 +301,14 @@ session_start();
 		
 		if (($taille >= $tabFXXL[0]) and ($taille <= $tabFXXL[1])) {
 			$vetSize=$tabFXXL[4];
-			if (abs($taille - $tabFXXL[0]) < abs($taille - $tabFXXL[1])) {
+			if (abs($taille - $tabFXXL[0]) <= abs($taille - $tabFXXL[1])) {
 				$taille = $tabFXXL[0];
 			}
 			else {
 				$taille = $tabFXXL[1];
 			}
 			
-			if (abs($poids - $tabFXXL[2]) < abs($poids - $tabFXXL[3])) {
+			if (abs($poids - $tabFXXL[2]) <= abs($poids - $tabFXXL[3])) {
 				$poids = $tabFXXL[2];
 			}
 			else {

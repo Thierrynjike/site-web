@@ -86,7 +86,7 @@
                             <div class="card-wrapper col-12" id="clothes1">
                                 <div class="card-img" id="_01" name="01">
                                     <img src="<?php echo("assets/images/".$_COOKIE['id'].".png"); ?>" alt="Mobirise" title="">
-                                    <br><br><h4 class="card-title pb-3 mbr-fonts-style display-7">15.99 €</h4>
+                                    <br><br><h4 class="card-title pb-3 mbr-fonts-style display-7">9.99 €</h4>
                                 </div>
 
                             </div>

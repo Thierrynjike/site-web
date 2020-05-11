@@ -87,7 +87,7 @@
                     </div>
                     <div class="card-box">
                         <h4 class="card-title pb-3 mbr-fonts-style display-7" style="text-indent:22px;" name="T-Shirt Blanc 5.99 €">T-Shirt Blanc </h4>
-                        <p style="text-indent: 22px;"><font color="blue">5.99 €</font></p>
+                        <p style="text-indent: 22px;"><font color="blue">9.99 €</font></p>
                         
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                     </div>
                     <div class="card-box">
                         <h4 class="card-title pb-3 mbr-fonts-style display-7" style="text-indent:22px;" name="Ensemble T-shirt & Pantalon 14.99 €">Ensemble T-Shirt & Pantalon </h4>
-                        <p style="text-indent: 22px;"><font color="blue">14.99 €</font></p>
+                        <p style="text-indent: 22px;"><font color="blue">9.99 €</font></p>
                         
                     </div>
                 </div>
