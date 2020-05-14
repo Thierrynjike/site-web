@@ -1,4 +1,4 @@
-#Virtual fitting Room
+# Virtual fitting Room
 
 Nowadays, online shopping is growing up and more people prefer to buy some stuff online including clothes
 That's why we thougth about this project
