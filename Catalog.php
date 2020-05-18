@@ -268,9 +268,6 @@
          });
      });
 
-
-
-
  </script>
   <script src="script.js">
   
