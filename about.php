@@ -49,7 +49,7 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="index.html#header2-1">
-                         <img src="assets/images/logo-122x96.png" alt="Mobirise" title="" style="height: 3.8rem;">
+                         <img src="assets/images/logo-122x96.png" alt="VarChar Try" title="" style="height: 3.8rem;">
                     </a>
                 </span>
                 <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.html#header2-1">VarcharTry</a></span>
@@ -90,25 +90,25 @@
 	<div id="image">
 	<center><h3><b><font color="black">VarChar Try Team</font></b></h3></center><br>
 	<div id="thanospundu">
-	<img id="pers" src="assets/images/Thanospundu.png"></img>
+	<img id="pers" src="assets/images/Thanospundu.png" alt="Olivier-Désiré"></img>
 	<div id="descrip">
 	<p><b>Olivier-Désiré Muhimpundu : </b>Graphic Modelist</p>
 	</div>
 	</div>
 	<div id="bitch">
-	<img id="pers" src="assets/images/bitch.png"></img>
+	<img id="pers" src="assets/images/bitch.png" alt="Leandro"></img>
 	<div id="descrip">
 	<p><b>Leandro Collier : </b>Graphic Modelist</p>
 	</div>
 	</div>
 	<div id="chef">
-	<img id="pers" src="assets/images/chef.png"></img>
+	<img id="pers" src="assets/images/chef.png" alt="Uriel"></img>
 	<div id="descrip">
 	<p><b>Uriel Kanku Lufuluabu : </b>Web designer</p>
 	</div>
 	</div><br>
 	<div id="thierry">
-	<img id="pers" src="assets/images/thierry.png"></img>
+	<img id="pers" src="assets/images/thierry.png" alt="Thierry"></img>
 	<div id="descrip">
 	<p><b>Thierry Noundou Njike : </b>Web Designer</p>
 	</div>
@@ -128,7 +128,7 @@
             <div class="col-12 col-md-3">
                 <div class="media-wrap">
                     
-                        <img src="assets/images/logo-192x152.png" alt="Mobirise" title="">
+                        <img src="assets/images/logo-192x152.png" alt="VarChar Try" title="">
                     
                 </div>
             </div>

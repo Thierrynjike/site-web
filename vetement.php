@@ -48,7 +48,7 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="index.html#header2-1">
-                         <img src="assets/images/logo-122x96.png" alt="Mobirise" title="" style="height: 3.8rem;">
+                         <img src="assets/images/logo-122x96.png" alt="VarChar Try" title="" style="height: 3.8rem;">
                     </a>
                 </span>
                 <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.html#header2-1">VarcharTry</a></span>
@@ -86,7 +86,7 @@
                             <!-- carte vetement selectioné page précédente -->
                             <div class="card-wrapper col-12" id="clothes1">
                                 <div class="card-img" id="_01" name="01">
-                                    <img src="<?php echo("assets/images/".$_COOKIE['id'].".png"); ?>" alt="Mobirise" title="">
+                                    <img src="<?php echo("assets/images/".$_COOKIE['id'].".png"); ?>" alt="VarChar Try" title="">
                                     <br><br><h4 class="card-title pb-3 mbr-fonts-style display-7">9.99 €</h4>
                                 </div>
 
@@ -268,7 +268,7 @@
             <div class="col-12 col-md-3">
                 <div class="media-wrap">
                     
-                        <img src="assets/images/logo-192x152.png" alt="Mobirise" title="">
+                        <img src="assets/images/logo-192x152.png" alt="VarChar Try" title="">
                     
                 </div>
             </div>

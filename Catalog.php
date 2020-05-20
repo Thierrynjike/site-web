@@ -48,7 +48,7 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="index.html#header2-1">
-                         <img src="assets/images/logo-122x96.png" alt="Mobirise" title="" style="height: 3.8rem;">
+                         <img src="assets/images/logo-122x96.png" alt="VarChar Try" title="" style="height: 3.8rem;">
                     </a>
                 </span>
                 <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.html#header2-1">VarcharTry</a></span>
@@ -84,7 +84,7 @@
             <div class="card col-3 col-md-3 col-lg-3">
                 <div class="col-spaced">
                     <div class="card-img" id="_01" name="01">
-                        <img class="clothes" src="<?php echo("assets/images/_01.png"); ?>" alt="Mobirise" title="">
+                        <img class="clothes" src="<?php echo("assets/images/_01.png"); ?>" alt="VarChar Try" title="">
                     </div>
                     <div class="card-box">
                         <h4 class="card-title pb-3 mbr-fonts-style display-7" style="text-indent:22px;" name="T-Shirt Blanc 5.99 €">T-Shirt Blanc </h4>
@@ -97,7 +97,7 @@
             <div class="card col-3 col-md-3 col-lg-3">
                 <div class="col-spaced">
                     <div class="card-img" id="_02" name="02">
-                        <img class="clothes" src="<?php echo("assets/images/_02.png"); ?>" alt="Mobirise" title="">
+                        <img class="clothes" src="<?php echo("assets/images/_02.png"); ?>" alt="VarChar Try" title="">
                     </div>
                     <div class="card-box ">
                         <h4 class="card-title pb-3 mbr-fonts-style display-7" style="text-indent:22px;" name="Pantalon Bleu 9.99 €">Pantalon Bleu</h4>
@@ -110,7 +110,7 @@
             <div class="card col-3 col-md-3 col-lg-3">
                 <div class="col-spaced">
                     <div class="card-img" id="_01_02" name="_01_02">
-                        <img class="clothes" src="<?php echo("assets/images/_01_02.png"); ?>" alt="Mobirise" title="">
+                        <img class="clothes" src="<?php echo("assets/images/_01_02.png"); ?>" alt="VarChar Try" title="">
                     </div>
                     <div class="card-box">
                         <h4 class="card-title pb-3 mbr-fonts-style display-7" style="text-indent:22px;" name="Ensemble T-shirt & Pantalon 14.99 €">Ensemble T-Shirt & Pantalon </h4>
@@ -150,7 +150,7 @@
             <div class="col-12 col-md-3">
                 <div class="media-wrap">
                     
-                        <img src="assets/images/logo-192x152.png" alt="Mobirise" title="">
+                        <img src="assets/images/logo-192x152.png" alt="VarChar Try" title="">
                     
                 </div>
             </div>
